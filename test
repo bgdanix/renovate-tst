@@ -1,0 +1,20 @@
+function extractBracesContent(content) {
+    let stack = []
+    var i = 0
+    for (i; i < content.length; i++) {
+        if (content[i] === '{') {
+          stack.push(content[i])
+        } else if (content[i] === '}')
+        {
+          stack.pop()
+          if (stack.length === 0) {
+            console.log(`closing parantheses found at ${i}`)
+            break
+          }
+        }
+    }
+    return i
+}
+
+console.log(regularBrackets(abc))
+console.log(abc.substring(1, regularBrackets(abc)))
