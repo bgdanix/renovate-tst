@@ -23,7 +23,7 @@ terraform {
     execute      = ["echo", "Running Terraform"]
   }
 
-  source = "github.com/bgdanix/tfrepo//terraform/modules/moduleone?ref=tfmodule_one-v0.0.9"
+  source = "github.com/bgdanix/tfrepo//terraform/modules/moduleone?ref=0.0.9"
 
   after_hook "after_hook" {
     commands     = ["apply", "plan"]
