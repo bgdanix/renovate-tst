@@ -1,0 +1,3 @@
+{
+	"prHourlyLimit": 20
+}
