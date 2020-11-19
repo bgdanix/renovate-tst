@@ -23,7 +23,7 @@ terraform {
     execute      = ["echo", "Running Terraform"]
   }
 
-  source = "github.com/bgdanix/terraform-google-modules/terraform-google-vm?ref=v4.0.0"
+  source = "github.com/terraform-google-modules/terraform-google-vm?ref=v4.0.0"
 
   after_hook "after_hook" {
     commands     = ["apply", "plan"]
